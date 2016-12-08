@@ -50,7 +50,9 @@ public class MainActivity extends AppCompatActivity implements EffectAdapter.OnI
         effects.add("SlideLeft");
         effects.add("SlideRight");
         effects.add("SlideTop");
-        effects.add("Slit");
+        effects.add("SlitH");
+        effects.add("SlitV");
+        effects.add("SlitHV");
         effects.add("ZoomCenter");
         effects.add("CustomAnimators");
 
@@ -116,13 +118,19 @@ public class MainActivity extends AppCompatActivity implements EffectAdapter.OnI
                 EffectFactory.SlideTop.getAnimator().invokeAnim(mDemoView);
                 break;
             case 15:
-                EffectFactory.Slit.getAnimator().invokeAnim(mDemoView);
+                EffectFactory.SlitH.getAnimator().invokeAnim(mDemoView);
                 break;
             case 16:
+                EffectFactory.SlitV.getAnimator().invokeAnim(mDemoView);
+                break;
+            case 17:
+                EffectFactory.SlitHV.getAnimator().invokeAnim(mDemoView);
+                break;
+            case 18:
                 // you can set animation duration .
                 EffectFactory.ZoomCenter.getAnimator().setDuration(800).invokeAnim(mDemoView);
                 break;
-            case 17:
+            case 19:
                 // you can use this method , custom you animators .
                 EffectFactory.NewsPaper.getAnimator().invokeAnim(new IAnimators.AnimatorTogether() {
                     @Override

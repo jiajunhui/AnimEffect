@@ -26,11 +26,11 @@ import com.nineoldandroids.animation.ObjectAnimator;
  * Created by Taurus on 2016/12/8.
  */
 
-public class AnimatorSlit extends BaseAnimator {
+public class AnimatorSlitH extends BaseAnimator {
     @Override
     public Animator[] togetherAnimators(View view) {
         return new Animator[]{
-                ObjectAnimator.ofFloat(view, PropertyType.RotationY.getValue(), 90,88,88,45,0).setDuration(getDuration()),
+                ObjectAnimator.ofFloat(view, PropertyType.RotationX.getValue(), 90,88,88,45,0).setDuration(getDuration()),
                 ObjectAnimator.ofFloat(view, PropertyType.Alpha.getValue(), 0,0.4f,0.8f, 1).setDuration(getDuration()*3/2),
                 ObjectAnimator.ofFloat(view, PropertyType.ScaleX.getValue(), 0,0.5f, 0.9f, 0.9f, 1).setDuration(getDuration()),
                 ObjectAnimator.ofFloat(view, PropertyType.ScaleY.getValue(),0,0.5f, 0.9f, 0.9f, 1).setDuration(getDuration())

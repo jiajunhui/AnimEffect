@@ -31,7 +31,9 @@ import com.kk.taurus.animeffect.anims.AnimatorSlideFall;
 import com.kk.taurus.animeffect.anims.AnimatorSlideLeft;
 import com.kk.taurus.animeffect.anims.AnimatorSlideRight;
 import com.kk.taurus.animeffect.anims.AnimatorSlideTop;
-import com.kk.taurus.animeffect.anims.AnimatorSlit;
+import com.kk.taurus.animeffect.anims.AnimatorSlitH;
+import com.kk.taurus.animeffect.anims.AnimatorSlitHV;
+import com.kk.taurus.animeffect.anims.AnimatorSlitV;
 import com.kk.taurus.animeffect.anims.AnimatorZoomCenter;
 import com.kk.taurus.animeffect.base.BaseAnimator;
 
@@ -59,7 +61,9 @@ public enum EffectFactory {
     SlideLeft(AnimatorSlideLeft.class),
     SlideRight(AnimatorSlideRight.class),
     SlideTop(AnimatorSlideTop.class),
-    Slit(AnimatorSlit.class),
+    SlitH(AnimatorSlitH.class),
+    SlitV(AnimatorSlitV.class),
+    SlitHV(AnimatorSlitHV.class),
     ZoomCenter(AnimatorZoomCenter.class)
 
     ;
