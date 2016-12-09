@@ -16,13 +16,26 @@
 
 package com.kk.taurus.animeffect;
 
+import com.kk.taurus.animeffect.anims.AnimatorBookFlipLeft;
+import com.kk.taurus.animeffect.anims.AnimatorBookFlipRight;
+import com.kk.taurus.animeffect.anims.AnimatorCalendarFlipBottom;
+import com.kk.taurus.animeffect.anims.AnimatorCalendarFlipTop;
 import com.kk.taurus.animeffect.anims.AnimatorFadeIn;
 import com.kk.taurus.animeffect.anims.AnimatorFall;
 import com.kk.taurus.animeffect.anims.AnimatorFlipH;
+import com.kk.taurus.animeffect.anims.AnimatorFlipHCircle;
 import com.kk.taurus.animeffect.anims.AnimatorFlipV;
+import com.kk.taurus.animeffect.anims.AnimatorFlipVCircle;
 import com.kk.taurus.animeffect.anims.AnimatorNewsPaper;
+import com.kk.taurus.animeffect.anims.AnimatorReboundBottom;
+import com.kk.taurus.animeffect.anims.AnimatorReboundLeft;
+import com.kk.taurus.animeffect.anims.AnimatorReboundRight;
+import com.kk.taurus.animeffect.anims.AnimatorReboundTop;
 import com.kk.taurus.animeffect.anims.AnimatorRotateBottom;
+import com.kk.taurus.animeffect.anims.AnimatorRotateCardLeftTop;
+import com.kk.taurus.animeffect.anims.AnimatorRotateCardRightBottom;
 import com.kk.taurus.animeffect.anims.AnimatorRotateLeft;
+import com.kk.taurus.animeffect.anims.AnimatorRotateShake;
 import com.kk.taurus.animeffect.anims.AnimatorShakeH;
 import com.kk.taurus.animeffect.anims.AnimatorShakeHV;
 import com.kk.taurus.animeffect.anims.AnimatorShakeV;
@@ -50,12 +63,12 @@ public enum EffectFactory {
     Fall(AnimatorFall.class),
     FlipH(AnimatorFlipH.class),
     FlipV(AnimatorFlipV.class),
-    NewsPaper(AnimatorNewsPaper.class),
+    ReboundLeft(AnimatorReboundLeft.class),
+    ReboundTop(AnimatorReboundTop.class),
+    ReboundRight(AnimatorReboundRight.class),
+    ReboundBottom(AnimatorReboundBottom.class),
     RotateBottom(AnimatorRotateBottom.class),
     RotateLeft(AnimatorRotateLeft.class),
-    ShakeH(AnimatorShakeH.class),
-    ShakeV(AnimatorShakeV.class),
-    ShakeHV(AnimatorShakeHV.class),
     SlideBottom(AnimatorSlideBottom.class),
     SlideFall(AnimatorSlideFall.class),
     SlideLeft(AnimatorSlideLeft.class),
@@ -64,7 +77,20 @@ public enum EffectFactory {
     SlitH(AnimatorSlitH.class),
     SlitV(AnimatorSlitV.class),
     SlitHV(AnimatorSlitHV.class),
-    ZoomCenter(AnimatorZoomCenter.class)
+    ZoomCenter(AnimatorZoomCenter.class),
+    BookFlipLeft(AnimatorBookFlipLeft.class),
+    BookFlipRight(AnimatorBookFlipRight.class),
+    CalendarFlipBottom(AnimatorCalendarFlipBottom.class),
+    CalendarFlipTop(AnimatorCalendarFlipTop.class),
+    FlipHCircle(AnimatorFlipHCircle.class),
+    FlipVCircle(AnimatorFlipVCircle.class),
+    NewsPaper(AnimatorNewsPaper.class),
+    RotateCardLeftTop(AnimatorRotateCardLeftTop.class),
+    RotateCardRightBottom(AnimatorRotateCardRightBottom.class),
+    ShakeH(AnimatorShakeH.class),
+    ShakeV(AnimatorShakeV.class),
+    ShakeHV(AnimatorShakeHV.class),
+    RotateShake(AnimatorRotateShake.class)
 
     ;
 

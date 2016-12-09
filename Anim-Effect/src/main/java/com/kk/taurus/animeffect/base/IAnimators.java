@@ -42,10 +42,22 @@ public interface IAnimators {
     void invokeAnim(View view);
 
     /**
+     * invoke on the view , and call back listener
+     * @param view
+     */
+    void invokeAnim(View view, Animator.AnimatorListener animatorListener);
+
+    /**
      * invoke animation use you custom animator set .
      * @param animatorTogether
      */
     void invokeAnim(AnimatorTogether animatorTogether);
+
+    /**
+     * invoke animation use you custom animator set . and call back listener
+     * @param animatorTogether
+     */
+    void invokeAnim(AnimatorTogether animatorTogether, Animator.AnimatorListener animatorListener);
 
     interface AnimatorTogether{
         /**

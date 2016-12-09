@@ -16,14 +16,14 @@ import java.util.List;
 public class EffectAdapter extends RecyclerView.Adapter<EffectAdapter.ItemHolder>{
 
     private Context mContext;
-    private List<String> effects = new ArrayList<>();
+    private List<Class> effects = new ArrayList<>();
     private OnItemClickListener onItemClickListener;
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
     }
 
-    public EffectAdapter(Context context, List<String> effects){
+    public EffectAdapter(Context context, List<Class> effects){
         this.mContext = context;
         this.effects = effects;
     }
@@ -36,7 +36,7 @@ public class EffectAdapter extends RecyclerView.Adapter<EffectAdapter.ItemHolder
     @Override
     public void onBindViewHolder(final ItemHolder holder, final int position) {
         holder.itemView.setBackgroundColor(position%2==0?Color.parseColor("#E7DCE0"):Color.parseColor("#F4F4F4"));
-        holder.effectType.setText(effects.get(position));
+        holder.effectType.setText(effects.get(position).getSimpleName());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -20,6 +20,7 @@ import android.view.View;
 
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorSet;
+import com.nineoldandroids.view.ViewHelper;
 
 /**
  * Created by Taurus on 2016/12/7.
@@ -41,16 +42,44 @@ public abstract class BaseAnimator implements IAnimators{
 
     @Override
     public void invokeAnim(View view) {
-        mAnimatorSet.cancel();
+        invokeAnim(view,null);
+    }
+
+    @Override
+    public void invokeAnim(View view, Animator.AnimatorListener animatorListener) {
+        initTargetView(view);
+        if(animatorListener!=null){
+            mAnimatorSet.addListener(animatorListener);
+        }
         setupAnimation(togetherAnimators(view));
         mAnimatorSet.start();
     }
 
     @Override
     public void invokeAnim(AnimatorTogether animatorTogether) {
-        mAnimatorSet.cancel();
+        invokeAnim(animatorTogether,null);
+    }
+
+    @Override
+    public void invokeAnim(AnimatorTogether animatorTogether, Animator.AnimatorListener animatorListener) {
+        if(animatorListener!=null){
+            mAnimatorSet.addListener(animatorListener);
+        }
         setupAnimation(animatorTogether.togetherAnimators());
         mAnimatorSet.start();
+    }
+
+    public void initTargetView(View view) {
+        initTargetViewPivotX(view);
+        initTargetViewPivotY(view);
+    }
+
+    public void initTargetViewPivotY(View view) {
+        ViewHelper.setPivotY(view, view.getMeasuredHeight() / 2.0f);
+    }
+
+    public void initTargetViewPivotX(View view) {
+        ViewHelper.setPivotX(view, view.getMeasuredWidth() / 2.0f);
     }
 
     public long getDuration() {
