@@ -18,6 +18,7 @@ package com.kk.taurus.animeffect;
 
 import com.kk.taurus.animeffect.anims.AnimatorBookFlipLeft;
 import com.kk.taurus.animeffect.anims.AnimatorBookFlipRight;
+import com.kk.taurus.animeffect.anims.AnimatorBottomOpen;
 import com.kk.taurus.animeffect.anims.AnimatorCalendarFlipBottom;
 import com.kk.taurus.animeffect.anims.AnimatorCalendarFlipTop;
 import com.kk.taurus.animeffect.anims.AnimatorFadeIn;
@@ -82,6 +83,7 @@ public enum EffectFactory {
     BookFlipRight(AnimatorBookFlipRight.class),
     CalendarFlipBottom(AnimatorCalendarFlipBottom.class),
     CalendarFlipTop(AnimatorCalendarFlipTop.class),
+    BottomOpen(AnimatorBottomOpen.class),
     FlipHCircle(AnimatorFlipHCircle.class),
     FlipVCircle(AnimatorFlipVCircle.class),
     NewsPaper(AnimatorNewsPaper.class),

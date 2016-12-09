@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.kk.taurus.animeffect.anims.AnimatorBookFlipLeft;
 import com.kk.taurus.animeffect.anims.AnimatorBookFlipRight;
+import com.kk.taurus.animeffect.anims.AnimatorBottomOpen;
 import com.kk.taurus.animeffect.anims.AnimatorCalendarFlipBottom;
 import com.kk.taurus.animeffect.anims.AnimatorCalendarFlipTop;
 import com.kk.taurus.animeffect.anims.AnimatorFadeIn;
@@ -159,6 +160,7 @@ public class MainActivity extends AppCompatActivity implements EffectAdapter.OnI
         effects.add(AnimatorBookFlipRight.class);
         effects.add(AnimatorCalendarFlipBottom.class);
         effects.add(AnimatorCalendarFlipTop.class);
+        effects.add(AnimatorBottomOpen.class);
         effects.add(AnimatorRotateCardLeftTop.class);
         effects.add(AnimatorRotateCardRightBottom.class);
         effects.add(AnimatorFlipHCircle.class);
