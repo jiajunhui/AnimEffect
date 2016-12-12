@@ -5,7 +5,7 @@ The animations included in this project are based on property animation.
 # Dependency
 ```gradle
 dependencies {
-    compile 'com.kk.taurus.animeffect:Anim-Effect:1.0.1'
+    compile 'com.kk.taurus.animeffect:Anim-Effect:1.0.2'
 }
 ```
 # Use
