@@ -16,11 +16,9 @@
 
 package com.kk.taurus.animeffect.base;
 
+import android.animation.Animator;
+import android.animation.AnimatorSet;
 import android.view.View;
-
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.AnimatorSet;
-import com.nineoldandroids.view.ViewHelper;
 
 /**
  * Created by Taurus on 2016/12/7.
@@ -75,11 +73,11 @@ public abstract class BaseAnimator implements IAnimators{
     }
 
     public void initTargetViewPivotY(View view) {
-        ViewHelper.setPivotY(view, view.getMeasuredHeight() / 2.0f);
+        view.setPivotY(view.getMeasuredHeight() / 2.0f);
     }
 
     public void initTargetViewPivotX(View view) {
-        ViewHelper.setPivotX(view, view.getMeasuredWidth() / 2.0f);
+        view.setPivotX(view.getMeasuredWidth() / 2.0f);
     }
 
     public long getDuration() {

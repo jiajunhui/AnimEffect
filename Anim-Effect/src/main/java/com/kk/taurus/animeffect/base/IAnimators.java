@@ -16,9 +16,8 @@
 
 package com.kk.taurus.animeffect.base;
 
+import android.animation.Animator;
 import android.view.View;
-
-import com.nineoldandroids.animation.Animator;
 
 /**
  * Created by Taurus on 2016/12/8.

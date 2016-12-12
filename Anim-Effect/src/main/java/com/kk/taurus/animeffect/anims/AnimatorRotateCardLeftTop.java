@@ -16,12 +16,11 @@
 
 package com.kk.taurus.animeffect.anims;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.view.View;
 
 import com.kk.taurus.animeffect.base.BaseAnimator;
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.ObjectAnimator;
-import com.nineoldandroids.view.ViewHelper;
 
 /**
  * Created by Taurus on 2016/12/9.
@@ -35,12 +34,12 @@ public class AnimatorRotateCardLeftTop extends BaseAnimator {
 
     @Override
     public void initTargetViewPivotX(View view) {
-        ViewHelper.setPivotX(view,0);
+        view.setPivotX(0);
     }
 
     @Override
     public void initTargetViewPivotY(View view) {
-        ViewHelper.setPivotY(view,0);
+        view.setPivotY(0);
     }
 
     @Override

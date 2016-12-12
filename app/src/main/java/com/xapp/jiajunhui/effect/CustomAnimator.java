@@ -1,11 +1,11 @@
 package com.xapp.jiajunhui.effect;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.view.View;
 
 import com.kk.taurus.animeffect.anims.PropertyType;
 import com.kk.taurus.animeffect.base.BaseAnimator;
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.ObjectAnimator;
 
 /**
  * Created by Taurus on 2016/12/9.
