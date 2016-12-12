@@ -1,7 +1,7 @@
 # AnimEffect
 View animation effects collection , You can easily add animations to your view.
 # Description
-The animations included in this project are based on nineold.
+The animations included in this project are based on property animation.
 # Dependency
 ```gradle
 dependencies {
